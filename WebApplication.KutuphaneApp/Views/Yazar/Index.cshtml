@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+
+<div class="container-fluid">
+    @model _01_KT.Entity.Entity.Yazar
+    @using (Ajax.BeginForm("Insert", "Yazar", new AjaxOptions { HttpMethod = "POST" }))
+    {
+        @Html.Label("Yazar Adı")
+        @Html.TextBoxFor(x => x.YazarAd, new { @class = "form-control" })
+        <br />
+        @Html.Label("Yazar Soyadı")
+        @Html.TextBoxFor(x => x.YazarSoyad, new { @class = "form-control" })
+        <br />
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    }
+    <hr />
+    <br />
+    @Html.Action("PartialViewToYazarList","Yazar")
+</div>

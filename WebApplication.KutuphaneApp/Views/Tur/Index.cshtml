@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+<div class="container-fluid">
+    @model _01_KT.Entity.Entity.Tur
+    @using (Ajax.BeginForm("Insert", "Tur", new AjaxOptions { HttpMethod = "POST" }))
+    {
+        <br />
+        @Html.Label("Tur Adı")
+        @Html.TextBoxFor(x => x.TurAdi, new { @class = "form-control" })
+        <br />
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    }
+
+    <hr />
+    <br />
+    @Html.Action("PartialViewTurToList")
+</div>
+
+

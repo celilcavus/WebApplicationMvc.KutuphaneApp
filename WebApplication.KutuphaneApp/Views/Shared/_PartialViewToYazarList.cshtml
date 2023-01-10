@@ -1,0 +1,27 @@
+﻿@model HashSet<_01_KT.Entity.Entity.Yazar>
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Yazar Ad</th>
+            <th>Yazar Soyad</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.YazarAd</td>
+                <td>@item.YazarSoyad</td>
+                <td>@Html.ActionLink("Güncelle", "Update", new { item.Id }, new { @class = "btn btn-outline-success" })</td>
+                <td>@Html.ActionLink("Sil", "Delete", new { item.Id }, new { @class = "btn btn-outline-danger" })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

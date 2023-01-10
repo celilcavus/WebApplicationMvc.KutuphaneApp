@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+
+@model _01_KT.Entity.Entity.Yazar
+<div class="container-fluid">
+    @using (Ajax.BeginForm("Update", "Yazar", new AjaxOptions { HttpMethod = "POST" }))
+    {
+        <br />
+        @Html.Label("Yazar Ad")
+        @Html.TextBoxFor(x => x.YazarAd, new { @class = "form-control" })
+        <br />
+        @Html.Label("Yazar Soyad")
+        @Html.TextBoxFor(x => x.YazarSoyad, new { @class = "form-control" })
+        <br />
+        <button type="submit" class="btn btn-primary">Kaydet!</button>
+    }
+
+</div>
+
+

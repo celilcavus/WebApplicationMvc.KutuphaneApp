@@ -1,0 +1,29 @@
+﻿@model HashSet<_01_KT.Entity.View.IslemView>
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th>Öğrenci Adı</th>
+            <th>Kitap Adı</th>
+            <th>Kitap Veriliş Tarih</th>
+            <th>Kitap Son Teslim Tarih</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="row">@item.Id</td>
+                <td>@item.OgrenciAd</td>
+                <td>@item.KitapAdi</td>
+                <td>@item.ATarih</td>
+                <td>@item.VTarih</td>
+                <td>@Html.ActionLink("Güncelle", "Guncelle", new { item.Id }, new { @class = "btn btn-outline-success" })</td>
+                <td>@Html.ActionLink("Sil", "Sil", new { item.Id }, new { @class = "btn btn-outline-danger" })</td>
+            </tr>
+        }
+    </tbody>
+</table>

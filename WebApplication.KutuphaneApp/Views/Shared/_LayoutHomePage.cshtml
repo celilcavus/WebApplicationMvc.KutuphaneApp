@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @* Style Css *@
+    <link href="~/Css_Scss/Style.css" rel="stylesheet" />
+    @* Bootstrap *@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="content">
+        <ul class="nav">
+            <li class="nav-link">@Html.ActionLink("Islem", "Index","Islem")</li>
+            <li class="nav-link">@Html.ActionLink("Ogrenci", "Index","Ogrenci")</li>
+            <li class="nav-link">@Html.ActionLink("Kitap", "Index","Kitap")</li>
+            <li class="nav-link">@Html.ActionLink("Tür", "Index","Tur")</li>
+            <li class="nav-link">@Html.ActionLink("Yazar", "Index","Yazar")</li>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

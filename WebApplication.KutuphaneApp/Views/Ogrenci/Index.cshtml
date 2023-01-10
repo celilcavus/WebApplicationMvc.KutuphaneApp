@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+@model _01_KT.Entity.Entity.Ogrenci
+<div class="container-fluid">
+    @using (Ajax.BeginForm("Insert", "Ogrenci", new AjaxOptions { HttpMethod = "POST" }))
+    {
+        @Html.Label("Öğrenci Adı")
+        @Html.TextBoxFor(x => x.OgrenciAd, new { @class = "form-control" })
+        <br />
+        @Html.Label("Öğrenci Soyad")
+        @Html.TextBoxFor(x => x.OgrenciSoyad, new { @class = "form-control" })
+        <br />
+        @Html.Label("Cinsiyet")
+        @Html.TextBoxFor(x => x.Cinsiyet, new { @class = "form-control" })
+        <br /><br />
+        @Html.Label("Doğum Tarihi")
+        @Html.TextBoxFor(x => x.DogumTarih, new { @class = "form-control" })
+        <br />
+        @Html.Label("Sınıf")
+        @Html.TextBoxFor(x => x.Sinif, new { @class = "form-control", @maxlength = "4" })
+        <br />
+        @Html.Label("Puan")
+        @Html.TextBoxFor(x => x.Puan, new { @class = "form-control", @maxlength = "3" })
+        <br />
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    }
+    <hr />
+    <br />
+    @Html.Action("PartialOgrenciList")
+</div>
+
+

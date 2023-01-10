@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+@model _01_KT.Entity.Entity.Islem
+<div class="container-fluid">
+    @using (Ajax.BeginForm("Insert", "Islem", new AjaxOptions { HttpMethod = "POST" }))
+    {
+
+        @Html.Label("Öğrenci")
+        <br />
+        @Html.DropDownListFor(x => x.OgrenciId, ViewBag.Ogrenciler as SelectList, new { @class = "btn btn-secondary dropdown-toggle", @style = "width:200px" })
+        <br />
+        @Html.Label("Kitap")
+        <br />
+        @Html.DropDownListFor(x => x.kitapId, ViewBag.Kitaplar as SelectList, new { @class = "btn btn-secondary dropdown-toggle", @style = "width:200px" })
+        <br /><br />
+        @Html.Label("Kitap Alış Tarihi")
+        @Html.TextBoxFor(x => x.ATarih, new { @class = "form-control" })
+        <br />
+        @Html.Label("Kitap Son Teslim Tarih")
+        @Html.TextBoxFor(x => x.VTarih, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-dark" type="submit">Kaydet!</button>
+    }
+    <hr />
+    <br />
+    @Html.Action("PartialViewToList", "Islem")
+</div>
+

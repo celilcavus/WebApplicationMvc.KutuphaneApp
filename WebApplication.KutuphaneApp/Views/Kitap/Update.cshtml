@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+@model _01_KT.Entity.Entity.Kitap
+<div class="container-fluid">
+    @using (Ajax.BeginForm("Update", "Kitap", new AjaxOptions { HttpMethod = "POST" }))
+    {
+        <br />
+        @Html.Label("Kitap Adı")
+        @Html.TextBoxFor(x => x.KitapAdi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Yazar Adı")
+        <br />
+        @Html.DropDownListFor(x => x.YazaId, ViewBag.YazarList as SelectList, new { @class = "btn btn-secondary dropdown-toggle w-100" })
+        <br /><br />
+        @Html.Label("Kitap Türü")
+        <br />
+        @Html.DropDownListFor(x => x.TurId, ViewBag.TurList as SelectList, new { @class = "btn btn-secondary dropdown-toggle w-100" })
+        <br />
+        <br />
+        @Html.Label("Sayfa Sayısı")
+        @Html.TextBoxFor(x => x.SayfaSayisi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Puan")
+        @Html.TextBoxFor(x => x.Puan, new { @class = "form-control", @maxlenght = "2" })
+        <br />
+        <button class="btn btn-dark" type="submit">Kaydet!</button>
+    }
+</div>
+
