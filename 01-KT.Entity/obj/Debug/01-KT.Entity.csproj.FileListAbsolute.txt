@@ -1,0 +1,6 @@
+D:\Software\WinMvc\WebApplication.KutuphaneApp\01-KT.Entity\bin\Debug\01-KT.Entity.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\01-KT.Entity\bin\Debug\01-KT.Entity.pdb
+D:\Software\WinMvc\WebApplication.KutuphaneApp\01-KT.Entity\obj\Debug\01-KT.Entity.csproj.AssemblyReference.cache
+D:\Software\WinMvc\WebApplication.KutuphaneApp\01-KT.Entity\obj\Debug\01-KT.Entity.csproj.CoreCompileInputs.cache
+D:\Software\WinMvc\WebApplication.KutuphaneApp\01-KT.Entity\obj\Debug\01-KT.Entity.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\01-KT.Entity\obj\Debug\01-KT.Entity.pdb

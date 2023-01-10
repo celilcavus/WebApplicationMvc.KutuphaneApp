@@ -1,0 +1,17 @@
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\03-KT.PresentationLayer.dll.config
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\03-KT.PresentationLayer.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\03-KT.PresentationLayer.pdb
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\02-KT.DataModel.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\EntityFramework.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\01-KT.Entity.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\02-KT.DataModel.pdb
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\02-KT.DataModel.dll.config
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\EntityFramework.xml
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\bin\Debug\01-KT.Entity.pdb
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\obj\Debug\03-KT.PresentationLayer.csproj.AssemblyReference.cache
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\obj\Debug\03-KT.PresentationLayer.csproj.CoreCompileInputs.cache
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\obj\Debug\03-KT.PresentationLayer.csproj.CopyComplete
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\obj\Debug\03-KT.PresentationLayer.dll
+D:\Software\WinMvc\WebApplication.KutuphaneApp\03-KT.PresentationLayer\obj\Debug\03-KT.PresentationLayer.pdb
